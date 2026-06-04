@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<robot name="robot_scara" xmlns:xacro="http://ros.org/wiki/xacro" >
+
+    <xacro:property name="package_name" value="scara_description"/>
+
+    <xacro:include filename="$(find ${package_name})/urdf/scara_urdf.xacro"/>
+
+    <xacro:include filename="$(find ${package_name})/urdf/scara_gz2.xacro"/>
+
+    <xacro:include filename="$(find ${package_name})/urdf/camera_sensor.xacro"/>
+
+    <xacro:include filename="$(find ${package_name})/urdf/lidar_sensor.xacro"/>
+    
+
+</robot>
